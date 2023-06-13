@@ -1,0 +1,221 @@
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+#navbar>a {
+  margin: 0 20px;
+  color: black;
+  text-decoration: none;
+}
+
+#navbar>div {
+  margin: 0 20px;
+}
+
+#navbar>a:not(:last-child) {
+  margin-right: 100px;
+}
+
+.btn {
+  --color: #00A97F;
+  --color2: rgb(10, 25, 30);
+  padding: 0.8em 1.75em;
+  background-color: transparent;
+  border-radius: 6px;
+  border: .3px solid var(--color);
+  transition: .5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 17px;
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.btn::after,
+.btn::before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: .5s ease-out;
+  background-color: var(--color);
+}
+
+.btn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+  color: var(--color2);
+}
+
+.btn:active {
+  filter: brightness(.7);
+  transform: scale(.98);
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0;
+}
+
+.div img {
+  max-width: 50%;
+  margin: 0 20px 0 0;
+}
+
+.div p {
+  margin: 0;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.div img:nth-child(2),
+.div img:nth-child(3),
+.div img:nth-child(4) {
+  width: 30px;
+  height: 30px;
+  margin: 0 40 0 0;
+}
+
+.images-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -10px;
+}
+
+.images-container img {
+  margin: 0 10px;
+}
+
+table.iksweb {
+  text-decoration: none;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+table.iksweb th {
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+table.iksweb td {
+  font-size: 13px;
+  color: #000000;
+}
+
+table.iksweb td,
+table.iksweb th {
+  white-space: pre-wrap;
+  padding: 10px 5px;
+  line-height: 13px;
+  vertical-align: middle;
+  border: 1px solid #000000;
+}
+
+table.iksweb tr:hover {
+  background-color: #f9fafb
+}
+
+table.iksweb tr:hover td {
+  color: #000000;
+  cursor: default;
+}
+
+.iksweb img {
+  max-width: 100%;
+  height: auto;
+  width: 100px;
+  height: 100px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #715B4B;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+  color: #F6F6F6;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.outer-box {
+  border: 7px solid #A1B29F;
+  width: 1160px;
+  height: 590px;
+}
+
+.inner-box {
+  border: 1px solid #715B4B;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.grid-item img {
+  width: 261px;
+  height: 300px;
+}
+
+.grid-item {
+
+  margin-bottom: 91px;
+  text-align: center;
+}
+
+.grid-item p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #323232;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 102.99%;
+}
